@@ -63,4 +63,4 @@ async def queue(ctx, url):
         queues[server.id] = [player]
     await client.say('Video queued.')
 
-client.run(['TOKEN'])
+bot.run(os.environ['BOT_TOKEN'])
