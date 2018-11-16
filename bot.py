@@ -2,7 +2,6 @@ import discord
 import youtube_dl
 from discord.ext import commands
 
-TOKEN = 'TOKEN'
 client = commands.Bot(command_prefix = ".")
 
 players = {}
@@ -64,4 +63,4 @@ async def queue(ctx, url):
         queues[server.id] = [player]
     await client.say('Video queued.')
 
-client.run(TOKEN)
+client.run(['TOKEN'])
